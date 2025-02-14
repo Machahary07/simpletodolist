@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple-Todo-List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Simple Todo List</h1>
-    <input placeholder="Add a new todo">
-    <button>Add todo</button>
-    <ul id="todos">
-        <!-- the items will be added here -->
-    </ul>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-2xl font-bold mb-4">Simple Todo List</h1>
+        <div class="flex mb-4">
+            <input class="flex-grow p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="e.g. Gym at 6pm">
+            <button class="bg-blue-500 text-white p-2 rounded-r-lg hover:bg-blue-600">Add todo</button>
+        </div>
+        <ul id="todos" class="list-disc pl-5">
+            <!-- the items will be added here -->
+        </ul>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
